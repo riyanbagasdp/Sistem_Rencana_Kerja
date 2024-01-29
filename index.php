@@ -45,15 +45,12 @@
                     <div class="position-absolute top-50 start-50 translate-middle" style="padding-left: 6%;">
                         <img src="img/logo_djp2.png" alt="logo djp2" style="width: 8%;">
                     </div>
-                    <!-- <div class="position-absolute top-50 start-50 translate-middle">
-                        <h1 class="h1">SISTEM RENCANA KERJA</h1>
-                    </div> -->
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
 
                         <!-- Nav Item - Search Dropdown (Visible Only XS) -->
                         <li class="nav-item dropdown no-arrow d-sm-none">
-                            
+
                             <!-- Dropdown - Messages -->
                             <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
                                 <form class="form-inline mr-auto w-100 navbar-search">
@@ -65,7 +62,6 @@
                                 </form>
                             </div>
                         </li>
-
 
                         <div class="topbar-divider d-none d-sm-block"></div>
 
@@ -89,7 +85,6 @@
 
                 </nav>
                 <!-- End of Topbar -->
-
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
