@@ -25,7 +25,7 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <?php include('sidebar.php'); ?>
+        <?php include('template/sidebar.php'); ?>
         <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
@@ -35,7 +35,7 @@
             <div id="content">
 
                 <!-- Topbar -->
-                <?= include('topbar.php'); ?>
+                <?php include('topbar_index.php'); ?>
                 <!-- End of Topbar -->
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
@@ -350,7 +350,7 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            <?php include('footer.php'); ?>
+            <?php include('template/footer.php'); ?>
             <!-- End of Footer -->
 
         </div>

@@ -41,7 +41,7 @@
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="rencana_kerja.php">Sekretariat</a>
+                        <a class="collapse-item" href="rencana/rencana_sekre.php">Sekretariat</a>
                         <h6 class="collapse-header">Sub Tim Manajemen :</h6>
                         <a class="collapse-item" href="cards.html">Manajemen Perubahan</a>
                         <h6 class="collapse-header">Sub Tim Penataan :</h6>
