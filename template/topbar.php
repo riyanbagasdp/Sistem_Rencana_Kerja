@@ -3,12 +3,14 @@
     <!-- Sidebar Toggle (Topbar) -->
 
     <!-- Topbar Search -->
-    <div class="position-absolute top-50 start-0 translate-middle">
+    <!-- <div class="position-absolute top-50 start-0 translate-middle">
         <img src="../img/logo_djp1.png" alt="logo djp1" style="width: 5%;">
     </div>
     <div class="position-absolute top-50 start-50 translate-middle" style="padding-left: 6%;">
         <img src="../img/logo_djp2.png" alt="logo djp2" style="width: 8%;">
-    </div>
+    </div> -->
+    <img src="../img/logo_djp1.png" class="rounded float-start" alt="..." style="width: 5%;">
+    <img src="../img/logo_djp2.png" class="rounded float-end" alt="..." style="width: 8%;">
 
     <!-- Title -->
 
