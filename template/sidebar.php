@@ -1,81 +1,74 @@
-<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-    <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.php">
-        <div class="sidebar-brand-icon rotate-n-15">
-            <!-- <i class="fas fa-laugh-wink"></i> -->
-        </div>
-        <div class="sidebar-brand-text mx-3">KPP Pratama Yogyakarta</div>
-    </a>
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
 
-    <!-- Divider -->
-    <hr class="sidebar-divider my-0">
+      <ul class="sidebar-nav" id="sidebar-nav">
 
-    <!-- Nav Item - Dashboard -->
-    <li class="nav-item active">
-        <a class="nav-link" href="index.php">
-            <i class="fas fa-solid fa-house-user"></i>
-            <span>Halaman Utama</span></a>
-    </li>
+          <li class="nav-item">
+              <a class="nav-link collapsed" href="index.php">
+                  <i class="bi bi-grid"></i>
+                  <span>Halaman Utama</span>
+              </a>
+          </li><!-- End Dashboard Nav -->
+          <li class="nav-heading">KINERJA</li>
+          <li class="nav-item">
+              <a class="nav-link collapsed" href="struktur.php">
+                  <i class="bi bi-grid"></i>
+                  <span>Struktur Tim</span>
+              </a>
+          </li><!-- End Dashboard Nav -->
 
-    <!-- Divider -->
-    <hr class="sidebar-divider">
+          <li class="nav-item">
+              <a class="nav-link " data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+                  <i class="bi bi-menu-button-wide"></i><span>Rencana Kerja</span><i class="bi bi-chevron-down ms-auto"></i>
+              </a>
+              <ul id="components-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
+                  <li>
+                      <a href="rencana_sekre.php">
+                          <i class="bi bi-circle"></i><span>Sekretariat</span>
+                      </a>
+                  </li>
+                  <li class="nav-heading">Sub Tim :</li>
+                  <li>
+                      <a href="rencana_mp.php" class="active">
+                          <i class="bi bi-circle"></i><span>Manajemen Perubahan</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="rencana_pt.php">
+                          <i class="bi bi-circle"></i><span>Penataan Tatalaksana</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="rencana_psm.php">
+                          <i class="bi bi-circle"></i><span>Penataan Sistem Manajemen SDM</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="rencana_pa.php">
+                          <i class="bi bi-circle"></i><span>Penguatan Akuntabilitas</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="rencana_pp.php">
+                          <i class="bi bi-circle"></i><span>Penguatan Pengawasan</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="rencana_kpp.php">
+                          <i class="bi bi-circle"></i><span>Peningkatan Kualitas Layanan Publik</span>
+                      </a>
+                  </li>
+              </ul>
+          </li><!-- End Components Nav -->
+          <li class="nav-heading">MONITORING</li>
 
-    <!-- Heading -->
-    <div class="sidebar-heading">
-        Kinerja
-    </div>
+          <li class="nav-item">
+              <a class="nav-link collapsed" href="users-profile.html">
+                  <i class="bi bi-person"></i>
+                  <span>Rekap Dokumen</span>
+              </a>
+          </li><!-- End Profile Page Nav -->
 
-    <!-- Nav Item - Tables -->
-    <li class="nav-item">
-        <a class="nav-link" href="tables.html">
-            <i class="fas fa-solid fa-sitemap"></i>
-            <span>Struktur Tim</span></a>
-    </li>
+      </ul>
 
-    <!-- Nav Item - Pages Collapse Menu -->
-    <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-            <i class="fas fa-solid fa-briefcase"></i>
-            <span>Rencana Kerja</span>
-        </a>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-                <a class="collapse-item" href="rencana/rencana_sekre.php">Sekretariat</a>
-                <h6 class="collapse-header">Sub Tim Manajemen :</h6>
-                <a class="collapse-item" href="cards.html">Manajemen Perubahan</a>
-                <h6 class="collapse-header">Sub Tim Penataan :</h6>
-                <a class="collapse-item" href="buttons.html">Tatalaksana</a>
-                <a class="collapse-item" href="cards.html">Sistem Manajemen SDM</a>
-                <h6 class="collapse-header">Sub Tim Penguatan :</h6>
-                <a class="collapse-item" href="buttons.html">Akuntabilitas</a>
-                <a class="collapse-item" href="cards.html">Pengawasan</a>
-                <h6 class="collapse-header">Sub Tim Peningkatan :</h6>
-                <a class="collapse-item" href="cards.html">Kualitas Layanan Publik</a>
-            </div>
-        </div>
-    </li>
-
-    <!-- Divider -->
-    <hr class="sidebar-divider">
-
-    <!-- Heading -->
-    <div class="sidebar-heading">
-        Monitoring
-    </div>
-
-    <!-- Nav Item - Rekap Dokumen -->
-    <li class="nav-item">
-        <a class="nav-link" href="charts.html">
-            <i class="fas fa-solid fa-file"></i>
-            <span>Rekap Dokumen</span></a>
-    </li>
-
-    <!-- Divider -->
-    <hr class="sidebar-divider d-none d-md-block">
-
-    <!-- Sidebar Toggler (Sidebar) -->
-    <div class="text-center d-none d-md-inline">
-        <button class="rounded-circle border-0" id="sidebarToggle"></button>
-    </div>
-
-</ul>
+  </aside><!-- End Sidebar-->
