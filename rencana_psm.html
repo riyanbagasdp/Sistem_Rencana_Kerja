@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Components / Accordion - NiceAdmin Bootstrap Template</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+
+        <div class="d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center">
+                <!-- <img src="assets/img/logo_djp1.png" alt="" style="size: 100%;">
+        <img src="assets/img/logo_djp2.png" alt=""> -->
+                <img src="assets/img/logo_djp1.png" class="rounded float-start" alt="...">
+                <img src="assets/img/logo_djp2.png" class="rounded float-end" alt="...">
+
+                <span class="d-none d-lg-block" style="font-size: 110%;">KPP Pratama Yogyakarta</span>
+            </a>
+            <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div><!-- End Logo -->
+
+
+        <nav class="header-nav ms-auto">
+            <ul class="d-flex align-items-center">
+
+                <li class="nav-item d-block d-lg-none">
+                    <a class="nav-link nav-icon search-bar-toggle " href="#">
+                        <i class="bi bi-search"></i>
+                    </a>
+                </li><!-- End Search Icon-->
+
+                <li class="nav-item dropdown pe-3">
+
+                    <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+                        <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+                        <span class="d-none d-md-block dropdown-toggle ps-2">Keluar</span>
+                    </a><!-- End Profile Iamge Icon -->
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                        <li class="dropdown-header">
+                            <h6>Semangat Bekerja</h6>
+                            <span>KPP Pratama Yogyakarta</span>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <i class="bi bi-box-arrow-right"></i>
+                                <span>Sign Out</span>
+                            </a>
+                        </li>
+
+                    </ul><!-- End Profile Dropdown Items -->
+                </li><!-- End Profile Nav -->
+
+            </ul>
+        </nav><!-- End Icons Navigation -->
+
+    </header><!-- End Header -->
+
+
+
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+
+        <ul class="sidebar-nav" id="sidebar-nav">
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="index.html">
+                    <i class="bi bi-grid"></i>
+                    <span>Halaman Utama</span>
+                </a>
+            </li><!-- End Dashboard Nav -->
+            <li class="nav-heading">KINERJA</li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="struktur.html">
+                    <i class="bi bi-grid"></i>
+                    <span>Struktur Tim</span>
+                </a>
+            </li><!-- End Dashboard Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link " data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-menu-button-wide"></i><span>Rencana Kerja</span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="components-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="rencana_sekre.html">
+                            <i class="bi bi-circle"></i><span>Sekretariat</span>
+                        </a>
+                    </li>
+                    <li class="nav-heading">Sub Tim :</li>
+                    <li>
+                        <a href="rencana_mp.html" class="active">
+                            <i class="bi bi-circle"></i><span>Manajemen Perubahan</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="rencana_pt.html">
+                            <i class="bi bi-circle"></i><span>Penataan Tatalaksana</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="rencana_psm.html">
+                            <i class="bi bi-circle"></i><span>Penataan Sistem Manajemen SDM</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="rencana_pa.html">
+                            <i class="bi bi-circle"></i><span>Penguatan Akuntabilitas</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="rencana_pp.html">
+                            <i class="bi bi-circle"></i><span>Penguatan Pengawasan</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="rencana_kpp.html">
+                            <i class="bi bi-circle"></i><span>Peningkatan Kualitas Layanan Publik</span>
+                        </a>
+                    </li>
+                </ul>
+            </li><!-- End Components Nav -->
+            <li class="nav-heading">MONITORING</li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="users-profile.html">
+                    <i class="bi bi-person"></i>
+                    <span>Rekap Dokumen</span>
+                </a>
+            </li><!-- End Profile Page Nav -->
+
+        </ul>
+
+    </aside><!-- End Sidebar-->
+    <main id="main" class="main">
+
+        <div class="pagetitle">
+            <h1>Halaman Pembangunan Komponen Penataan Sistem Manajemen SDM</h1>
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item">Components</li>
+                    <li class="breadcrumb-item active">Sub Tim Penataan Sistem Manajemen SDM</li>
+                </ol>
+            </nav>
+        </div><!-- End Page Title -->
+
+        <section class="section">
+            <div class="row">
+                <!-- Accordion -->
+                <div class="col-lg-12">
+                    <div class="accordion" id="accordionExample">
+
+                        <!-- Accordion Item 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Pembangunan Komponen Penataan Sistem Manajemen SDM
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <!-- awal -->
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h2>Table Upload Berkas</h2>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+
+                                            <div class="col-md-12">
+                                                <div class="widget blank no-padding">
+                                                    <div class="panel panel-default work-progress-table">
+                                                        <!-- Default panel contents -->
+
+                                                        <!-- Table -->
+                                                        <table id="mytable" class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Rencana Kerja</th>
+                                                                    <th>Produk Output</th>
+                                                                    <th>File</th>
+                                                                    <th>Status</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td rowspan="4">Penyusunan Kebutuhan Pegawai dengan Mengacu pada Peta Jabatan dan Analisis Beban Kerja (ABK)</td>
+                                                                    <td rowspan="4">Print screen ABK, Data Statistik dan Kebutuhan Pegawai per unit kerja, Urjab</td>
+                                                                    <td>
+                                                                        <div class="mb-3">
+                                                                            <label for="formFileMultiple" class="form-label">Upload File Print screen ABK</label>
+                                                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td><button type="button" class="btn btn-success"><i class="bi bi-check-circle"></i></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="mb-3">
+                                                                            <label for="formFileMultiple" class="form-label">Upload File Data Statistik</label>
+                                                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td><button type="button" class="btn btn-success"><i class="bi bi-check-circle"></i></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="mb-3">
+                                                                            <label for="formFileMultiple" class="form-label">Upload File Kebutuhan Pegawai per unit kerja</label>
+                                                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td><button type="button" class="btn btn-success"><i class="bi bi-check-circle"></i></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="mb-3">
+                                                                            <label for="formFileMultiple" class="form-label">Upload File Urjab</label>
+                                                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td><button type="button" class="btn btn-success"><i class="bi bi-check-circle"></i></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td rowspan="2">Pengumpulan aturan/kebijakan terkait rekrutmen pegawai, SK Penempatan Pegawai hasil rekrutrmen</td>
+                                                                    <td rowspan="2">aturan dan SK Penempatan Pegawai</td>
+                                                                    <td>
+                                                                        <div class="mb-3">
+                                                                            <label for="formFileMultiple" class="form-label">Upload File Aturan</label>
+                                                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td><button type="button" class="btn btn-danger"><i class="bi bi-exclamation-octagon"></i></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="mb-3">
+                                                                            <label for="formFileMultiple" class="form-label">Upload File SK Penempatan Pegawai</label>
+                                                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td><button type="button" class="btn btn-danger"><i class="bi bi-exclamation-octagon"></i></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Penempatan Pegawai hasil rekrutmen sesuai dengan kebutuhan dan kualifikasinya (mutasi internal)</td>
+                                                                    <td>SK Mutasi Perbandingan dengan ABK</td>
+                                                                    <td>
+                                                                        <div class="mb-3">
+                                                                            <label for="formFileMultiple" class="form-label">Upload File SK Mutasi Perbandingan dengan ABK</label>
+                                                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td><button type="button" class="btn btn-danger"><i class="bi bi-exclamation-octagon"></i></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td rowspan="2">Pemantauan dan Evaluasi penempatan pegawai rekrutmen terhadap perbaikan kinerja unit kerja</td>
+                                                                    <td rowspan="2">ND dan Laporan Monev</td>
+                                                                    <td>
+                                                                        <div class="mb-3">
+                                                                            <label for="formFileMultiple" class="form-label">Upload File ND</label>
+                                                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td><button type="button" class="btn btn-danger"><i class="bi bi-exclamation-octagon"></i></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="mb-3">
+                                                                            <label for="formFileMultiple" class="form-label">Upload File Laporan Monev</label>
+                                                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td><button type="button" class="btn btn-danger"><i class="bi bi-exclamation-octagon"></i></button></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- akhir -->
+                                    <!-- Button to send files in the first accordion -->
+                                    <button type="button" class="btn btn-primary" onclick="sendFiles('collapseOne')">Kirim Berkas</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Accordion Item 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Pola Mutasi Internal
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h2>Table Upload Berkas</h2>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+
+                                            <div class="col-md-12">
+                                                <div class="widget blank no-padding">
+                                                    <div class="panel panel-default work-progress-table">
+                                                        <!-- Default panel contents -->
+
+                                                        <!-- Table -->
+                                                        <table id="mytable" class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Rencana Kerja</th>
+                                                                    <th>Produk Output</th>
+                                                                    <th>File</th>
+                                                                    <th>Status</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Perumusan mekanisme penempatan pegawai pada unit kerja (mutasi internal)</td>
+                                                                    <td>ND/LHR</td>
+                                                                    <td>
+                                                                        <div class="mb-3">
+                                                                            <label for="formFileMultiple" class="form-label">Upload File ND/LHR</label>
+                                                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td><button type="button" class="btn btn-success"><i class="bi bi-check-circle"></i></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Pelaksanaan Mutasi Pegawai (internal unit) sesuai dengan aturan/kebijakan pola mutasi yang telah ditetapkan</td>
+                                                                    <td>SK Mutasi Internal</td>
+                                                                    <td>
+                                                                        <div class="mb-3">
+                                                                            <label for="formFileMultiple" class="form-label">Upload File SK Mutasi Internal</label>
+                                                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                                                        </div>
+                                                                    </td>
+
+                                                                    <td><button type="button" class="btn btn-danger"><i class="bi bi-exclamation-octagon"></i></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Penyampaian Usulan Mutasi Pegawai (eksternal unit) dalam rangka penataan dan pengembangan karir pegawai</td>
+                                                                    <td>Surat Usulan Mutasi</td>
+                                                                    <td>
+                                                                        <div class="mb-3">
+                                                                            <label for="formFileMultiple" class="form-label">Upload File Surat Usulan Mutasi</label>
+                                                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                                                        </div>
+                                                                    </td>
+
+                                                                    <td><button type="button" class="btn btn-danger"><i class="bi bi-exclamation-octagon"></i></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td rowspan="2">Pemantauan dan Evaluasi pola mutasi internal terhadap perbaikan kinerja</td>
+                                                                    <td rowspan="2">ND dan Laporan Monev</td>
+                                                                    <td>
+                                                                        <div class="mb-3">
+                                                                            <label for="formFileMultiple" class="form-label">Upload File ND</label>
+                                                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td><button type="button" class="btn btn-danger"><i class="bi bi-exclamation-octagon"></i></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="mb-3">
+                                                                            <label for="formFileMultiple" class="form-label">Upload File Laporan Monev</label>
+                                                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td><button type="button" class="btn btn-danger"><i class="bi bi-exclamation-octagon"></i></button></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Button to send files in the two accordion -->
+                                    <button type="button" class="btn btn-primary" onclick="sendFiles('collapseTwo')">Kirim Berkas</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Accordion Item 3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Pengembangan Pegawai Berbasis Kompetensi
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h2>Table Upload Berkas</h2>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="widget blank no-padding">
+                                                    <div class="panel panel-default work-progress-table">
+                                                        <!-- Default panel contents -->
+
+                                                        <!-- Table -->
+                                                        <table id="mytable" class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Rencana Kerja</th>
+                                                                    <th>Produk Output</th>
+                                                                    <th>File</th>
+                                                                    <th>Status</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Pelaksanaan Training Need Analysis (TNA)</td>
+                                                                    <td>Laporan TNA Pegawai</td>
+                                                                    <td>
+                                                                        <div class="mb-3">
+                                                                            <label for="formFileMultiple" class="form-label">Upload File Laporan TNA Pegawai</label>
+                                                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td><button type="button" class="btn btn-success"><i class="bi bi-check-circle"></i></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Penyusunan Rencana Pengembangan Kompetensi Pegawai</td>
+                                                                    <td>Jadwal Kegiatan IHT</td>
+                                                                    <td>
+                                                                        <div class="mb-3">
+                                                                            <label for="formFileMultiple" class="form-label">Upload File Jadwal Kegiatan IHT</label>
+                                                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                                                        </div>
+                                                                    </td>
+
+                                                                    <td><button type="button" class="btn btn-success"><i class="bi bi-check-circle"></i></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Pendataan Kesenjangan antara Kompetensi Pegawai dengan Standar Kompetensi Jabatan</td>
+                                                                    <td>Laporan Analisa Kesenjangan</td>
+                                                                    <td>
+                                                                        <div class="mb-3">
+                                                                            <label for="formFileMultiple" class="form-label">Upload File Laporan Analisa Kesenjangan</label>
+                                                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                                                        </div>
+                                                                    </td>
+
+                                                                    <td><button type="button" class="btn btn-success"><i class="bi bi-check-circle"></i></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td rowspan="2">Pelaksanaan Pendidikan dan Pelatihan, serta pengembangan kompetensi lainnya</td>
+                                                                    <td rowspan="2">Surat Usulan Diklat/short course, Undangan/ND IHT, FGD, seminar, dll</td>
+                                                                    <td>
+                                                                        <div class="mb-3">
+                                                                            <label for="formFileMultiple" class="form-label">Upload File Surat Usulan Diklat/short course</label>
+                                                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td><button type="button" class="btn btn-success"><i class="bi bi-check-circle"></i></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="mb-3">
+                                                                            <label for="formFileMultiple" class="form-label">Upload File Undangan/ND IHT, FGD, seminar, dll</label>
+                                                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td><button type="button" class="btn btn-success"><i class="bi bi-check-circle"></i></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td rowspan="2">Pemantauan dan Evaluasi terhadap Hasil Pengembangan Kompetensi terhadap Kinerja Pegawai</td>
+                                                                    <td rowspan="2">ND dan Laporan Monev</td>
+                                                                    <td>
+                                                                        <div class="mb-3">
+                                                                            <label for="formFileMultiple" class="form-label">Upload File ND</label>
+                                                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td><button type="button" class="btn btn-success"><i class="bi bi-check-circle"></i></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="mb-3">
+                                                                            <label for="formFileMultiple" class="form-label">Upload File Laporan Monev</label>
+                                                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td><button type="button" class="btn btn-success"><i class="bi bi-check-circle"></i></button></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Button to send files in the three accordion -->
+                                    <button type="button" class="btn btn-primary" onclick="sendFiles('collapseThree')">Kirim Berkas</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Accordion Item 4 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Penetapan Kinerja Individu
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h2>Table Upload Berkas</h2>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+
+                                            <div class="col-md-12">
+                                                <div class="widget blank no-padding">
+                                                    <div class="panel panel-default work-progress-table">
+                                                        <!-- Default panel contents -->
+
+                                                        <!-- Table -->
+                                                        <table id="mytable" class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Rencana Kerja</th>
+                                                                    <th>Produk Output</th>
+                                                                    <th>File</th>
+                                                                    <th>Status</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td rowspan="3">Penetapan Kinerja Individu</td>
+                                                                    <td rowspan="3">Kemenkeu-Three, Kemenkeu-Four, dan Kemenkeu-Five</td>
+                                                                    <td>
+                                                                        <div class="mb-3">
+                                                                            <label for="formFileMultiple" class="form-label">Upload File Kemenkeu-Three</label>
+                                                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td><button type="button" class="btn btn-success"><i class="bi bi-check-circle"></i></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="mb-3">
+                                                                            <label for="formFileMultiple" class="form-label">Upload File Kemenkeu-Four</label>
+                                                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td><button type="button" class="btn btn-success"><i class="bi bi-check-circle"></i></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="mb-3">
+                                                                            <label for="formFileMultiple" class="form-label">Upload File Kemenkeu-Five</label>
+                                                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td><button type="button" class="btn btn-success"><i class="bi bi-check-circle"></i></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Penelaahan Indikator Kinerja Utama (IKU) individu telah selaras dengan sasaran organisasi, program kegiatan seksi dan output individu</td>
+                                                                    <td>Peta Cascading</td>
+                                                                    <td>
+                                                                        <div class="mb-3">
+                                                                            <label for="formFileMultiple" class="form-label">Upload File Peta Cascading</label>
+                                                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td><button type="button" class="btn btn-success"><i class="bi bi-check-circle"></i></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td rowspan="2">Pengukuran Kinerja Individu (secara periodik)</td>
+                                                                    <td rowspan="2">Prinscreen e-performance dan SIKKA</td>
+                                                                    <td>
+                                                                        <div class="mb-3">
+                                                                            <label for="formFileMultiple" class="form-label">Upload File Prinscreen e-performance</label>
+                                                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td><button type="button" class="btn btn-success"><i class="bi bi-check-circle"></i></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="mb-3">
+                                                                            <label for="formFileMultiple" class="form-label">Upload File Prinscreen SIKKA</label>
+                                                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td><button type="button" class="btn btn-success"><i class="bi bi-check-circle"></i></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td rowspan="2">Pemberian Reward berdasarkan hasil penilaian individu</td>
+                                                                    <td rowspan="2">Program PKP, Pembayaran Renumerasi (PMK Tukin)</td>
+                                                                    <td>
+                                                                        <div class="mb-3">
+                                                                            <label for="formFileMultiple" class="form-label">Program PKP</label>
+                                                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                                                        </div>
+
+                                                                    </td>
+                                                                    <td><button type="button" class="btn btn-success"><i class="bi bi-check-circle"></i></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="mb-3">
+                                                                            <label for="formFileMultiple" class="form-label">Program Pembayaran Renumerasi (PMK Tukin)</label>
+                                                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td><button type="button" class="btn btn-success"><i class="bi bi-check-circle"></i></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Perancangan Inovasi yang mendukung pengukuran kinerja yang objektif berintegritas</td>
+                                                                    <td>Dokumen inovasi</td>
+                                                                    <td>
+                                                                        <div class="mb-3">
+                                                                            <label for="formFileMultiple" class="form-label">Upload File Dokumen inovasi</label>
+                                                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td><button type="button" class="btn btn-success"><i class="bi bi-check-circle"></i></button></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Button to send files in the four accordion -->
+                                    <button type="button" class="btn btn-primary" onclick="sendFiles('collapseFour')">Kirim Berkas</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Accordion Item 5 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Penegakan Aturan Disiplin/Kode Etik Pegawai
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h2>Table Upload Berkas</h2>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+
+                                            <div class="col-md-12">
+                                                <div class="widget blank no-padding">
+                                                    <div class="panel panel-default work-progress-table">
+                                                        <!-- Default panel contents -->
+
+                                                        <!-- Table -->
+                                                        <table id="mytable" class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Rencana Kerja</th>
+                                                                    <th>Produk Output</th>
+                                                                    <th>File</th>
+                                                                    <th>Status</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td><b>Sosialisasi dan Internalisasi Aturan Disiplin dan Kode Etik Pegawai DJP</b></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td rowspan="2">Sosialisasi Tatap Muka</td>
+                                                                    <td rowspan="2">ND/Undangan Sosialisasi, Foto/video kegiatan</td>
+                                                                    <td>
+                                                                        <div class="mb-3">
+                                                                            <label for="formFileMultiple" class="form-label">Upload File ND/Undangan Sosialisasi</label>
+                                                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td><button type="button" class="btn btn-success"><i class="bi bi-check-circle"></i></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="mb-3">
+                                                                            <label for="formFileMultiple" class="form-label">Upload File Foto/video kegiatan</label>
+                                                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td><button type="button" class="btn btn-success"><i class="bi bi-check-circle"></i></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Media Internalisasi</td>
+                                                                    <td>Bukti Penyampaian</td>
+                                                                    <td>
+                                                                        <div class="mb-3">
+                                                                            <label for="formFileMultiple" class="form-label">Upload File (banner, poster,video, situs resmi, leaflet, dll)</label>
+                                                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                                                        </div>
+                                                                    </td>
+
+                                                                    <td><button type="button" class="btn btn-success"><i class="bi bi-check-circle"></i></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><b>Penerapan Aturan Disiplin dan Kode Etik Pegawai dalam pelaksanaan tugas dan dalam pergaulan hidup sehari-hari</b></td>
+                                                                    <td>Laporan Hasil Pemantauan Kode Etik dan Disiplin (UKI)</td>
+                                                                    <td>
+                                                                        <div class="mb-3">
+                                                                            <label for="formFileMultiple" class="form-label">Upload File Laporan Hasil Pemantauan Kode Etik dan Disiplin (UKI)</label>
+                                                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                                                        </div>
+                                                                    </td>
+
+                                                                    <td><button type="button" class="btn btn-success"><i class="bi bi-check-circle"></i></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><b>Perancangan Inovasi Strategi Internalisasi Unit Kerja dalam Rangka Penerapan Aturan Disiplin dan Kode Etik Pegawai DJP</b></td>
+                                                                    <td>Dokumen inovasi</td>
+                                                                    <td>
+                                                                        <div class="mb-3">
+                                                                            <label for="formFileMultiple" class="form-label">Upload File Dokumen inovasi</label>
+                                                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td><button type="button" class="btn btn-success"><i class="bi bi-check-circle"></i></button></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Button to send files in the five accordion -->
+                                    <button type="button" class="btn btn-primary" onclick="sendFiles('collapseFive')">Kirim Berkas</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Accordion Item 6 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Sistem Informasi Kepegawaian
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h2>Table Upload Berkas</h2>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="widget blank no-padding">
+                                                    <div class="panel panel-default work-progress-table">
+                                                        <!-- Default panel contents -->
+
+                                                        <!-- Table -->
+                                                        <table id="mytable" class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Rencana Kerja</th>
+                                                                    <th>Produk Output</th>
+                                                                    <th>File</th>
+                                                                    <th>Status</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Penyusunan Jadwal Pemutakhiran Data Pegawai pada Aplikasi SIKKA secara berkala</td>
+                                                                    <td>ND</td>
+                                                                    <td>
+                                                                        <div class="mb-3">
+                                                                            <label for="formFileMultiple" class="form-label">Upload File ND</label>
+                                                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td><button type="button" class="btn btn-success"><i class="bi bi-check-circle"></i></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td rowspan="2">Pemutakhiran Data Pegawai pada Aplikasi SIKKA</td>
+                                                                    <td rowspan="2">Permohonan Pemutakhiran Data Pegawai, printscreen update data SIKKA</td>
+                                                                    <td>
+                                                                        <div class="mb-3">
+                                                                            <label for="formFileMultiple" class="form-label">Upload File Permohonan Pemutakhiran Data Pegawai</label>
+                                                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td><button type="button" class="btn btn-success"><i class="bi bi-check-circle"></i></button></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="mb-3">
+                                                                            <label for="formFileMultiple" class="form-label">Upload File printscreen update data SIKKA</label>
+                                                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td><button type="button" class="btn btn-success"><i class="bi bi-check-circle"></i></button></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Button to send files in the six accordion -->
+                                    <button type="button" class="btn btn-primary" onclick="sendFiles('collapseSix')">Kirim Berkas</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main><!-- End #main -->
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+        <div class="copyright">
+            &copy; Copyright <strong><span>KPP Pratama Yogyakarta</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+        </div>
+    </footer><!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/chart.js/chart.umd.js"></script>
+    <script src="assets/vendor/echarts/echarts.min.js"></script>
+    <script src="assets/vendor/quill/quill.min.js"></script>
+    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
