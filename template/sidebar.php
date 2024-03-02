@@ -1,5 +1,5 @@
-    <!-- ======= Sidebar ======= -->
-    <aside id="sidebar" class="sidebar">
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
 
       <ul class="sidebar-nav" id="sidebar-nav">
 
@@ -62,10 +62,49 @@
           </li><!-- End Components Nav -->
           <li class="nav-heading">MONITORING</li>
 
+          <ul id="components-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
+                  <li>
+                      <a href="rekap_sekre.php">
+                          <i class="bi bi-circle"></i><span>Rekap Sekretariat</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="rekap_mp.php" class="active">
+                          <i class="bi bi-circle"></i><span>Rekap Manajemen Perubahan</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="rekap_pt.php">
+                          <i class="bi bi-circle"></i><span>Rekap Penataan Tatalaksana</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="rekap_psm.php">
+                          <i class="bi bi-circle"></i><span>Rekap Penataan Sistem Manajemen SDM</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="rekap_pa.php">
+                          <i class="bi bi-circle"></i><span>Rekap Penguatan Akuntabilitas</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="rekap_pp.php">
+                          <i class="bi bi-circle"></i><span>Rekap Penguatan Pengawasan</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="rekap_kpp.php">
+                          <i class="bi bi-circle"></i><span>Rekap Peningkatan Kualitas Layanan Publik</span>
+                      </a>
+                  </li>
+              </ul>
+          <li class="nav-heading">Fitur</li>
+
           <li class="nav-item">
-              <a class="nav-link collapsed" href="users-profile.html">
+              <a class="nav-link collapsed" href="editor.php">
                   <i class="bi bi-person"></i>
-                  <span>Rekap Dokumen</span>
+                  <span>Editor</span>
               </a>
           </li><!-- End Profile Page Nav -->
 
